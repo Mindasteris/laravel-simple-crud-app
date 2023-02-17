@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    @apply bg-gray-900;
+}
+
+.buttons {
+    @apply border rounded-lg p-4 px-20 hover:bg-white hover:text-black hover:font-bold;
+}
+
+/* form {
+    @apply border;
+} */
+
+form input, textarea, button {
+    @apply w-[300px] my-4 text-black rounded-lg py-1 px-2;
+}
+
+form textarea {
+    @apply h-[200px] max-h-[200px];
+}
+
+form button {
+    @apply border py-2 text-white hover:bg-white hover:text-black hover:font-bold;
+}
+
+label {
+    @apply text-3xl;
+}
+
+.error {
+    @apply text-red-600 text-lg;
+}
+
+.is-invalid {
+    @apply outline-red-600;
+}
+
+.message {
+    @apply my-10 p-2 bg-green-600 font-medium text-xl rounded-lg w-full max-w-[500px] mx-auto;
+}
